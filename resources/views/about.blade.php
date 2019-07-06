@@ -31,7 +31,7 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="{{url('/')}}"><img src="{{('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
+                                <a href="{{('/')}}"><img src="{{('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
                             </div>
 
                             <!-- Login Search Area -->
@@ -64,7 +64,7 @@
 
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="{{url('/')}}"><img src="{{('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
+                            <a href="{{('/')}}"><img src="{{('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
                         </div>
 
                         <!-- Navbar Toggler -->
@@ -83,17 +83,17 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="{{url('/')}}">Home</a></li>
+                                    <li class="active"><a href="{{('/')}}">Home</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="{{url('/')}}">Home</a></li>
+                                            <li><a href="{{('/')}}">Home</a></li>
                                             <li><a href="{{url('catagories')}}">Catagories</a></li>
                                             <li><a href="{{url('single')}}">Single Articles</a></li>
                                             <li><a href="{{url('about')}}">About Us</a></li>
                                             <li><a href="{{url('contact')}}">Contact</a></li>
                                             <li><a href="#">Dropdown</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="{{url('/')}}">Home</a></li>
+                                                    <li><a href="{{('/')}}">Home</a></li>
                                                     <li><a href="{{url('catagories')}}">Catagories</a></li>
                                                     <li><a href="{{url('single')}}">Single Articles</a></li>
                                                     <li><a href="{{url('about')}}">About Us</a></li>
@@ -106,7 +106,7 @@
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Catagories</li>
-                                                <li><a href="{{url('/')}}">Home</a></li>
+                                                <li><a href="{{('/')}}">Home</a></li>
                                                 <li><a href="{{url('catagories')}}">Catagories</a></li>
                                                 <li><a href="{{url('single')}}">Single Articles</a></li>
                                                 <li><a href="{{url('about')}}">About Us</a></li>
@@ -114,7 +114,7 @@
                                             </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Catagories</li>
-                                                <li><a href="{{url('/')}}">Home</a></li>
+                                                <li><a href="{{('/')}}">Home</a></li>
                                                 <li><a href="{{url('catagories')}}">Catagories</a></li>
                                                 <li><a href="{{url('single')}}">Single Articles</a></li>
                                                 <li><a href="{{url('about')}}">About Us</a></li>
@@ -122,7 +122,7 @@
                                             </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Catagories</li>
-                                                <li><a href="{{url('/')}}">Home</a></li>
+                                                <li><a href="{{('/')}}">Home</a></li>
                                                 <li><a href="{{url('catagories')}}">Catagories</a></li>
                                                 <li><a href="{{url('single')}}">Single Articles</a></li>
                                                 <li><a href="{{url('about')}}">About Us</a></li>
@@ -168,7 +168,7 @@
                                     <li><a href="#">Business</a></li>
                                     <li><a href="#">Technology</a></li>
                                     <li><a href="#">Health</a></li>
-                                    <li><a href="#">Travel</a></li>
+                                    <li><a href="#"url>Travel</a></li>
                                     <li><a href="#">Sports</a></li>
                                     <li><a href="{{url('contact')}}">Contact</a></li>
                                 </ul>
@@ -227,69 +227,172 @@
     </div>
     <!-- ##### Hero Area End ##### -->
 
-    <!-- ##### Contact Form Area Start ##### -->
-    <div class="contact-area section-padding-0-80">
+    <!-- ##### About Area Start ##### -->
+    <section class="about-area">
         <div class="container">
+
             <div class="row">
                 <div class="col-12">
-                    <div class="contact-title">
-                        <h2>Contact us</h2>
-                    </div>
+                    <h2>A young and professional team</h2>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-12 col-lg-8">
-                    <div class="contact-form-area">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <input type="text" class="form-control" id="name" placeholder="Name">
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                </div>
-                                <div class="col-12">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                </div>
-                                <div class="col-12">
-                                    <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button class="btn newspaper-btn mt-30 w-100" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="col-12 col-lg-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placerat. Sed varius leo ac leo fermentum, eu cursus nunc maximus. Integer convallis nisi nibh, et ornare neque ullamcorper ac. Nam id congue lec tus, a venenatis massa. Maecenas justo libero, vulputate vel nunc id, blandit feugiat sem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, purus imperdiet volutpat tincidunt, eros sem mollis quam, ut placerat urna neque at massa. Proin vitae pulvinar justo. Donec vel placerat enim, at ultricies risus.</p>
                 </div>
-
-                <div class="col-12 col-lg-4">
-                    <!-- Single Contact Information -->
-                    <div class="single-contact-information mb-30">
-                        <h6>Address:</h6>
-                        <p>481 Creekside Lane Avila <br>Beach, CA 93424</p>
-                    </div>
-                    <!-- Single Contact Information -->
-                    <div class="single-contact-information mb-30">
-                        <h6>Phone:</h6>
-                        <p>+53 345 7953 32453 <br>+53 345 7557 822112</p>
-                    </div>
-                    <!-- Single Contact Information -->
-                    <div class="single-contact-information mb-30">
-                        <h6>Email:</h6>
-                        <p>yourmail@gmail.com</p>
-                    </div>
+                <div class="col-12 col-lg-6">
+                    <p>Donec gravida non metus blandit facilisis. Cras tincidunt, lorem aliquam molestie eleifend, libero dui volutpat dui, nec sodales massa libero ut metus. Mauris pretium elit ut dapibus consequat. Nam ut lorem nec sem dignissim gravida. Duis fringilla.</p>
+                    <p>Donec turpis erat, scelerisque id euismod sit amet, fermentum vel dolor. Nulla facilisi. Sed pellentesque lectus et accumsan aliquam. Fusce lobortis cursus quam, id mattis sapien. Aliquam erat volutpat. Aliquam placerat, est quis sagittis tincidunt, ipsum eros posuere mi, ut finibus quam sem eget ex.</p>
                 </div>
             </div>
 
-            <!-- Google Maps -->
-            <div class="map-area">
-                <div id="googleMap"></div>
-            </div>
+            <div class="row align-items-center mt-80">
+                <!-- Single Cool Fact -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact d-flex align-items-center">
+                        <h3><span class="counter">12</span>K</h3>
+                        <div class="cf-text">
+                            <h6>News Article</h6>
+                            <span>Donec turpis erat, scelerisq</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Single Cool Fact -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact d-flex align-items-center">
+                        <h3><span class="counter">45</span></h3>
+                        <div class="cf-text">
+                            <h6>Reporters</h6>
+                            <span>Donec turpis erat, scelerisq</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Cool Fact -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact d-flex align-items-center">
+                        <h3><span class="counter">25</span></h3>
+                        <div class="cf-text">
+                            <h6>Awards Won</h6>
+                            <span>Donec turpis erat, scelerisq</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Cool Fact -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact d-flex align-items-center">
+                        <h3><span class="counter">17</span></h3>
+                        <div class="cf-text">
+                            <h6>Years Old</h6>
+                            <span>Donec turpis erat, scelerisq</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- ##### Contact Form Area End ##### -->
+    </section>
+    <!-- ##### About Area End ##### -->
+
+    <!-- ##### Team Area Start ##### -->
+    <section class="newspaper-team mb-30">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member">
+                        <img src="{{('assets/frontend/img/bg-img/t1.jpg')}}" alt="">
+                        <div class="team-info">
+                            <h5>James Williams</h5>
+                            <h6>Senior Editor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member">
+                        <img src="{{('assets/frontend/img/bg-img/t2.jpg')}}" alt="">
+                        <div class="team-info">
+                            <h5>Christinne Smith</h5>
+                            <h6>Senior Editor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member">
+                        <img src="{{('assets/frontend/img/bg-img/t3.jpg')}}" alt="">
+                        <div class="team-info">
+                            <h5>Alicia Dormund</h5>
+                            <h6>Senior Editor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member">
+                        <img src="{{('assets/frontend/img/bg-img/t4.jpg')}}" alt="">
+                        <div class="team-info">
+                            <h5>Steve Duncan</h5>
+                            <h6>Senior Editor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member">
+                        <img src="{{('assets/frontend/img/bg-img/t5.jpg')}}" alt="">
+                        <div class="team-info">
+                            <h5>James Williams</h5>
+                            <h6>Senior Editor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member">
+                        <img src="{{('assets/frontend/img/bg-img/t6.jpg')}}" alt="">
+                        <div class="team-info">
+                            <h5>Christinne Smith</h5>
+                            <h6>Senior Editor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member">
+                        <img src="{{('assets/frontend/img/bg-img/t7.jpg')}}" alt="">
+                        <div class="team-info">
+                            <h5>Alicia Dormund</h5>
+                            <h6>Senior Editor</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member">
+                        <img src="{{('assets/frontend/img/bg-img/t8.jpg')}}" alt="">
+                        <div class="team-info">
+                            <h5>Steve Duncan</h5>
+                            <h6>Senior Editor</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Team Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
@@ -304,7 +407,7 @@
                         <div class="footer-widget-area mt-80">
                             <!-- Footer Logo -->
                             <div class="footer-logo">
-                                <a href="{{url('/')}}"><img src="{{('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
+                                <a href="{{('/')}}"><img src="{{('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
                             </div>
                             <!-- List -->
                             <ul class="list">
@@ -415,9 +518,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{('assets/frontend/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
     <script src="{{('assets/frontend/js/active.js')}}"></script>
-    <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
-    <script src="{{('assets/frontend/js/google-map/map-active.js')}}"></script>
 </body>
 
 </html>
