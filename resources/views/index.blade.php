@@ -31,7 +31,7 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="{{('assets/frontend/index.html"><img src="img/core-img/logo.png')}}" alt=""></a>
+                                <a href="index.html"><img src="{{('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
                             </div>
 
                             <!-- Login Search Area -->
@@ -64,7 +64,7 @@
 
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="{{('assets/frontend/index.html"><img src="img/core-img/logo.png')}}" alt=""></a>
+                            <a href="index.html"><img src="{{('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
                         </div>
 
                         <!-- Navbar Toggler -->
@@ -219,7 +219,7 @@
                 <!-- Hero Add -->
                 <div class="col-12 col-lg-4">
                     <div class="hero-add">
-                        <a href="#"><img src="img/bg-img/hero-add.gif" alt=""></a>
+                        <a href="#"><img src="{{('assets/frontend/img/bg-img/hero-add.gif')}}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -250,8 +250,8 @@
                                         <p class="post-excerp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placerat. Sed varius leo ac leo fermentum, eu cursus nunc maximus. Integer convallis nisi nibh, et ornare neque ullamcorper ac. Nam id congue lectus, a venenatis massa. Maecenas justo libero, vulputate vel nunc id, blandit feugiat sem. </p>
                                         <!-- Post Like & Post Comment -->
                                         <div class="d-flex align-items-center">
-                                            <a href="#" class={{('assets/frontend/"post-like"><img src="img/core-img/like.png')}}" alt=""> <span>392</span></a>
-                                            <a href="#" class="po{{('assets/frontend/st-comment"><img src="img/core-img/chat.png')}}" alt=""> <span>10</span></a>
+                                            <a href="#" class="post-like"><img src="{{('assets/frontend/img/core-img/like.png')}}" alt=""> <span>392</span></a>
+                                            <a href="#" class="post-comment"><img src="{{('assets/frontend/img/core-img/chat.png')}}" alt=""> <span>10</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -272,8 +272,8 @@
                                         </a>
                                         <!-- Post Like & Post Comment -->
                                         <div class="d-flex align-items-center">
-                                            <a href="#" class={{('assets/frontend/"post-like"><img src="img/core-img/like.png')}}" alt=""> <span>392</span></a>
-                                            <a href="#" class="po{{('assets/frontend/st-comment"><img src="img/core-img/chat.png')}}" alt=""> <span>10</span></a>
+                                            <a href="#" class="post-like"><img src="{{('assets/frontend/img/core-img/like.png')}}" alt=""> <span>392</span></a>
+                                            <a href="#" class="post-comment"><img src="{{('assets/frontend/img/core-img/chat.png')}}" alt=""> <span>10</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -292,8 +292,8 @@
                                         </a>
                                         <!-- Post Like & Post Comment -->
                                         <div class="d-flex align-items-center">
-                                            <a href="#" class={{('assets/frontend/"post-like"><img src="img/core-img/like.png')}}" alt=""> <span>392</span></a>
-                                            <a href="#" class="po{{('assets/frontend/st-comment"><img src="img/core-img/chat.png')}}" alt=""> <span>10</span></a>
+                                            <a href="#" class="post-like"><img src="{{('assets/frontend/img/core-img/like.png')}}" alt=""> <span>392</span></a>
+                                            <a href="#" class="post-comment"><img src="{{('assets/frontend/img/core-img/chat.png')}}" alt=""> <span>10</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -427,8 +427,8 @@
                                         <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
                                     </a>
                                     <div class="post-meta d-flex align-items-center">
-                                        <a href="#" class={{('assets/frontend/"post-like"><img src="img/core-img/like.png')}}" alt=""> <span>392</span></a>
-                                        <a href="#" class="po{{('assets/frontend/st-comment"><img src="img/core-img/chat.png')}}" alt=""> <span>10</span></a>
+                                        <a href="#" class="post-like"><img src="{{('assets/frontend/img/core-img/like.png')}}" alt=""> <span>392</span></a>
+                                        <a href="#" class="post-comment"><img src="{{('assets/frontend/img/core-img/chat.png')}}" alt=""> <span>10</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -446,8 +446,8 @@
                                         <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
                                     </a>
                                     <div class="post-meta d-flex align-items-center">
-                                        <a href="#" class={{('assets/frontend/"post-like"><img src="img/core-img/like.png')}}" alt=""> <span>392</span></a>
-                                        <a href="#" class="po{{('assets/frontend/st-comment"><img src="img/core-img/chat.png')}}" alt=""> <span>10</span></a>
+                                        <a href="#" class="post-like"><img src="{{('assets/frontend/img/core-img/like.png')}}" alt=""> <span>392</span></a>
+                                        <a href="#" class="post-comment"><img src="{{('assets/frontend/img/core-img/chat.png')}}" alt=""> <span>10</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -465,8 +465,8 @@
                                         <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
                                     </a>
                                     <div class="post-meta d-flex align-items-center">
-                                        <a href="#" class={{('assets/frontend/"post-like"><img src="img/core-img/like.png')}}" alt=""> <span>392</span></a>
-                                        <a href="#" class="po{{('assets/frontend/st-comment"><img src="img/core-img/chat.png')}}" alt=""> <span>10</span></a>
+                                        <a href="#" class="post-like"><img src="{{('assets/frontend/img/core-img/like.png')}}" alt=""> <span>392</span></a>
+                                        <a href="#" class="post-comment"><img src="{{('assets/frontend/img/core-img/chat.png')}}" alt=""> <span>10</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -484,8 +484,8 @@
                                         <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
                                     </a>
                                     <div class="post-meta d-flex align-items-center">
-                                        <a href="#" class={{('assets/frontend/"post-like"><img src="img/core-img/like.png')}}" alt=""> <span>392</span></a>
-                                        <a href="#" class="po{{('assets/frontend/st-comment"><img src="img/core-img/chat.png')}}" alt=""> <span>10</span></a>
+                                        <a href="#" class="post-like"><img src="{{('assets/frontend/img/core-img/like.png')}}" alt=""> <span>392</span></a>
+                                        <a href="#" class="post-comment"><img src="{{('assets/frontend/img/core-img/chat.png')}}" alt=""> <span>10</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -557,7 +557,7 @@
                 <!-- Single Video Post -->
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="single-video-post">
-                        <img src="img/{{('assets/frontend/bg-img/video1.jpg')}}" alt="">
+                        <img src="{{('assets/frontend/img/bg-img/video1.jpg')}}" alt="">
                         <!-- Video Button -->
                         <div class="videobtn">
                             <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
@@ -568,7 +568,7 @@
                 <!-- Single Video Post -->
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="single-video-post">
-                        <img src="img/{{('assets/frontend/bg-img/video2.jpg')}}" alt="">
+                        <img src="{{('assets/frontend/img/bg-img/video2.jpg')}}" alt="">
                         <!-- Video Button -->
                         <div class="videobtn">
                             <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
@@ -579,7 +579,7 @@
                 <!-- Single Video Post -->
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="single-video-post">
-                        <img src="img/{{('assets/frontend/bg-img/video3.jpg')}}" alt="">
+                        <img src="{{('assets/frontend/img/bg-img/video3.jpg')}}" alt="">
                         <!-- Video Button -->
                         <div class="videobtn">
                             <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
@@ -607,7 +607,7 @@
                         <div class="col-12 col-lg-4">
                             <div class="single-blog-post">
                                 <div class="post-thumb">
-                                    <a href="#"><img src={{('assets/frontend/"img/bg-img/1.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{('assets/frontend/img/bg-img/1.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="post-data">
                                     <a href="#" class="post-title">
@@ -624,7 +624,7 @@
                         <div class="col-12 col-lg-4">
                             <div class="single-blog-post">
                                 <div class="post-thumb">
-                                    <a href="#"><img src={{('assets/frontend/"img/bg-img/2.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{('assets/frontend/img/bg-img/2.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="post-data">
                                     <a href="#" class="post-title">
@@ -641,7 +641,7 @@
                         <div class="col-12 col-lg-4">
                             <div class="single-blog-post">
                                 <div class="post-thumb">
-                                    <a href="#"><img src={{('assets/frontend/"img/bg-img/3.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{('assets/frontend/img/bg-img/3.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="post-data">
                                     <a href="#" class="post-title">
@@ -658,7 +658,7 @@
                         <div class="col-12 col-lg-4">
                             <div class="single-blog-post">
                                 <div class="post-thumb">
-                                    <a href="#"><img src={{('assets/frontend/"img/bg-img/4.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{('assets/frontend/img/bg-img/4.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="post-data">
                                     <a href="#" class="post-title">
@@ -675,7 +675,7 @@
                         <div class="col-12 col-lg-4">
                             <div class="single-blog-post">
                                 <div class="post-thumb">
-                                    <a href="#"><img src={{('assets/frontend/"img/bg-img/5.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{('assets/frontend/img/bg-img/5.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="post-data">
                                     <a href="#" class="post-title">
@@ -692,7 +692,7 @@
                         <div class="col-12 col-lg-4">
                             <div class="single-blog-post">
                                 <div class="post-thumb">
-                                    <a href="#"><img src={{('assets/frontend/"img/bg-img/6.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{('assets/frontend/img/bg-img/6.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="post-data">
                                     <a href="#" class="post-title">
@@ -716,7 +716,7 @@
                     <!-- Single Post -->
                     <div class="single-blog-post style-2">
                         <div class="post-thumb">
-                            <a href="#"><img src={{('assets/frontend/"img/bg-img/7.jpg')}}" alt=""></a>
+                            <a href="#"><img src="{{('assets/frontend/img/bg-img/7.jpg')}}" alt=""></a>
                         </div>
                         <div class="post-data">
                             <a href="#" class="post-title">
@@ -731,7 +731,7 @@
                     <!-- Single Post -->
                     <div class="single-blog-post style-2">
                         <div class="post-thumb">
-                            <a href="#"><img src={{('assets/frontend/"img/bg-img/8.jpg')}}" alt=""></a>
+                            <a href="#"><img src="{{('assets/frontend/img/bg-img/8.jpg')}}" alt=""></a>
                         </div>
                         <div class="post-data">
                             <a href="#" class="post-title">
@@ -746,7 +746,7 @@
                     <!-- Single Post -->
                     <div class="single-blog-post style-2">
                         <div class="post-thumb">
-                            <a href="#"><img src={{('assets/frontend/"img/bg-img/9.jpg')}}" alt=""></a>
+                            <a href="#"><img src="{{('assets/frontend/img/bg-img/9.jpg')}}" alt=""></a>
                         </div>
                         <div class="post-data">
                             <a href="#" class="post-title">
@@ -800,7 +800,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="footer-add">
-                        <a href="#"><img src="img/bg-img/footer-add.gif" alt=""></a>
+                        <a href="#"><img src="{{('assets/frontend/img/bg-img/footer-add.gif')}}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -821,7 +821,7 @@
                         <div class="footer-widget-area mt-80">
                             <!-- Footer Logo -->
                             <div class="footer-logo">
-                                <a href="{{('assets/frontend/index.html"><img src="img/core-img/logo.png')}}" alt=""></a>
+                                <a href="index.html"><img src="{{('assets/frontend/img/core-img/logo.png')}}" alt=""></a>
                             </div>
                             <!-- List -->
                             <ul class="list">
@@ -923,15 +923,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="{{asset('assets/frontend/js/jquery/jquery-2.2.4.min.js')}}"></script>
+    <script src="{{('assets/frontend/js/jquery/jquery-2.2.4.min.js')}}"></script>
     <!-- Popper js -->
-    <script src="{{asset('assets/frontend/js/bootstrap/popper.min.js')}}"></script>
+    <script src="{{('assets/frontend/js/bootstrap/popper.min.js')}}"></script>
     <!-- Bootstrap js -->
-    <script src="{{asset('assets/frontend/js/bootstrap/bootstrap.min.js')}}"></script>
+    <script src="{{('assets/frontend/js/bootstrap/bootstrap.min.js')}}"></script>
     <!-- All Plugins js -->
-    <script src="{{asset('assets/frontend/js/plugins/plugins.js')}}"></script>
+    <script src="{{('assets/frontend/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
-    <script src="{{asset('assets/frontend/js/active.js')}}"></script>
+    <script src="{{('assets/frontend/js/active.js')}}"></script>
 </body>
 
 </html>
