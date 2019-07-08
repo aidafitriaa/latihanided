@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/admin', function () {
+    return view('welcome');
 });
 
 Auth::routes();
@@ -24,3 +24,14 @@ Route::get('contact', 'FrontendController@contact');
 Route::get('catagories', 'FrontendController@catagories');
 Route::get('about', 'FrontendController@about');
 Route::get('single', 'FrontendController@single');
+
+Route::group(['prefix'=>'admin','middleware'=>['auth']],
+function() {
+    Route::get('/', function(){
+        return view('admin.index');
+    });
+    route::resource('artikel','ArtikelController');
+    route::resource('kategori','KategoriController');
+    route::resource('tag','TagController');
+}
+);

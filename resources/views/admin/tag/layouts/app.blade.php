@@ -26,13 +26,13 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-                <a class="navbar-brand" href="{{ url('/admin/artikel') }}">
+                <a class="navbar-brand" href="{{ url('/artikel') }}">
                  Artikel  
                 </a>
-                <a class="navbar-brand" href="{{ url('/admin/kategori') }}">
+                <a class="navbar-brand" href="{{ url('/kategori') }}">
                  Kategori
                 </a>
-                <a class="navbar-brand" href="{{ url('/admin/tag') }}">
+                <a class="navbar-brand" href="{{ url('/tag') }}">
                  Tag
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
