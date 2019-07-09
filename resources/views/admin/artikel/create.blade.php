@@ -50,7 +50,11 @@
                                         <label for="">Tag</label>
                                         <select class="form-control
                                         @error('tag') is-invalid @enderror" name="tag[]" id="s2_demo3" multiple="multiple" required>
-                                           
+                                        @foreach ($tag as $data)
+                                            <option value="{{$data->id}}">
+                                                {{ $data->nama_tag }}
+                                            </option>
+                                        @endforeach 
                                         </select>
                                         @error('tag')
                                         <span class="invalid-feedback" role="alert">
@@ -62,6 +66,11 @@
                                         <label for="">Kategori</label>
                                         <select class="form-control
                                         @error('kategori') is-invalid @enderror" name="id_kategori" id="" required>
+                                        @foreach ($kategori as $data)
+                                            <option value="{{$data->id}}">
+                                                {{ $data->nama_kategori }}
+                                            </option>
+                                        @endforeach 
                                            
                                         </select>
                                         @error('kategori')

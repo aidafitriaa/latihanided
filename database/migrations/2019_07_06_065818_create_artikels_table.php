@@ -17,7 +17,7 @@ class CreateArtikelsTable extends Migration
             $table->bigIncrements('id');
             $table->string('judul');
             $table->string('slug');
-            $table->string('konten');
+            $table->text('konten');
             $table->string('foto');
             $table->unsignedBigInteger('id_user');
             $table->unsignedBigInteger('id_kategori');

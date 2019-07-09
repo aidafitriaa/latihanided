@@ -34,7 +34,7 @@ class ArtikelController extends Controller
        $kategori = Kategori::all();
        $tag = Tag::all();
        // dd($tag);
-       return view('admin.artikel.create', compact('kategori'.'tag'));
+       return view('admin.artikel.create', compact('kategori','tag'));
     }
 
     /**
@@ -56,16 +56,19 @@ class ArtikelController extends Controller
         $artikel->judul = $request->judul;
         $artikel->slug = str_slug($request->judul, '-');
         $artikel->konten = $request->konten;
+        $artikel->id_user = Auth::user()->id;
         $artikel->id_kategori = $request->id_kategori;
         //foto
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $path = public_path() .'/assets/img/artikel';
-            $filename = str_random(6) .'-'
+            $filename = str_random(6) . '-'
             . $file->getClientOriginalName();
             $upload = $file->move(
                 $path,$filename
             );
+            $artikel->foto = $filename;
+            }   
             $artikel->save();
             $artikel->tag()->attach($request->tag);
             Session::flash("flash_notification",[
@@ -75,7 +78,7 @@ class ArtikelController extends Controller
             ]);
             return redirect()->route('artikel.index');
         }
-    }
+    
     /**
      * Display the specified resource.
      *
@@ -122,7 +125,7 @@ class ArtikelController extends Controller
         $artikel->judul = $request->judul;
         $artikel->slug = str_slug($request->judul, '-');
         $artikel->konten = $request->konten;
-        $artikel->id_user = $request->id;
+        $artikel->id_user = Auth::user()->id;
         $artikel->id_kategori = $request->id_kategori;
         //foto
         if ($request->hasFile('foto')) {
@@ -184,5 +187,6 @@ class ArtikelController extends Controller
             "message" => "Berhasil menghapus <b>"
                          . $blog->judul."</b>"
         ]);
+        return redirect()->route('artikel.index');
 }
 }

@@ -72,7 +72,7 @@ class KategoriController extends Controller
     public function edit($id)
     {
         $kategori = Kategori::findOrFail($id);
-        return view('admin.$kategori.edit', compact('kategori'));
+        return view('admin.kategori.edit', compact('kategori'));
     }
 
     /**
@@ -91,13 +91,12 @@ class KategoriController extends Controller
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->slug = str_slug($request->nama_kategori, '-');
             $kategori->save();
-            $kategori->tag()->sync($request->tag);
             Session::flash("flash_notification",[
                 "level" => "success",
                 "message" => "Berhasil edit <b>"
                              . $kategori->nama_kategori."</b>"
             ]);
-            return redirect()->route('kategori.nama_kategori');
+            return redirect()->route('kategori.index');
     }
 
     /**
