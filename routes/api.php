@@ -20,3 +20,33 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('siswi','SiswiController');
 Route::resource('sekolah','SekolahController');
 // Route::get('sekolah','SekolahController@index');
+
+
+Route::get('/', function (Router $router) {
+    return collect($router->getRoutes()->getRoutesByMethod()["GET"])->map(function ($value, $key) {
+        return url($key);
+    })->values();
+});
+
+Route::resource('categories', 'CategoryAPIController', [
+    'only' => ['index', 'show', 'store', 'update', 'destroy']
+]);
+
+Route::resource('articles', 'ArticleAPIController', [
+    'only' => ['index', 'show', 'store', 'update', 'destroy']
+]);
+
+Route::resource('users', 'UserAPIController', [
+    'only' => ['index', 'show', 'store', 'update', 'destroy']
+]);
+
+// Frontend
+Route::resource('front', 'FrontendAPIController');
+
+
+Route::get('contoh', 'ContohController@index');
+Route::get('contoh2', 'ContohController@index2');
+
+
+Route::resource('siswa', 'SiswaController');
+
