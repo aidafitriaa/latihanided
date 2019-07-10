@@ -12,7 +12,7 @@ $(function () {
         method: "GET",
         dataType: "json",
         success: function (berhasil) {
-            // console.log(berhasil)
+            console.log(berhasil)
             $.each(berhasil.data, function (key, value) {
                 $(".data-siswa").append(
                     `

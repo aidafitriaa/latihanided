@@ -13,7 +13,13 @@ class Siswa2Controller extends Controller
      */
     public function index()
     {
-        //
+        $siswa = Siswa::all();
+        $response = [
+            'success' => true,
+            'data' =>  $siswa,
+            'message' => 'Berhasil ditampilkan.'
+        ];
+        return response()->json($response, 200);
     }
 
     /**
@@ -34,7 +40,16 @@ class Siswa2Controller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $siswa = new Siswa();
+        $siswa->nama = $request->namasiswa;
+        $siswa->save();
+
+        $response = [
+            'success' => true,
+            'data' =>  $siswa,
+            'message' => 'Berhasil ditambahkan.'
+        ];
+        return response()->json($response, 200);
     }
 
     /**
@@ -79,6 +94,13 @@ class Siswa2Controller extends Controller
      */
     public function destroy($id)
     {
-        //
+        $siswa = Siswa::find($id)->delete($id);
+        
+                $response = [
+                    'success' => true,
+                    'data' =>  $siswa,
+                    'message' => 'Berhasil dihapus.'
+                ];
+                return response()->json($response, 200);
     }
 }
