@@ -49,6 +49,10 @@ Route::get('single', function () {
     return view('single');
 });
 
+Route::get('fitri', function () {
+    return view('fitri');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

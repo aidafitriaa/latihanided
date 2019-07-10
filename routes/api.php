@@ -56,7 +56,7 @@ Route::group(
     // Isi Route Disini
     Route::resource('siswi','SiswiController');
     Route::resource('sekolah','SekolahController');
-    Route::resource('siswa2','Siswa2Controller');
+    Route::resource('fitri','Siswa2Controller');
     
 });
 
