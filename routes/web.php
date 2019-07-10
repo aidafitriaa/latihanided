@@ -49,8 +49,8 @@ Route::get('single', function () {
     return view('single');
 });
 
-Route::get('fitri', function () {
-    return view('fitri');
+Route::get('siswa', function () {
+    return view('siswa');
 });
 
 Auth::routes();

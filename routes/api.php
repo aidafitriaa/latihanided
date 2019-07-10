@@ -48,15 +48,13 @@ Route::get('contoh', 'ContohController@index');
 Route::get('contoh2', 'ContohController@index2');
 
 
-Route::resource('siswa', 'SiswaController');
-
 
 Route::group(
     ['middleware' => 'cors'],function (){
     // Isi Route Disini
     Route::resource('siswi','SiswiController');
     Route::resource('sekolah','SekolahController');
-    Route::resource('fitri','Siswa2Controller');
+    Route::resource('siswa','Siswa2Controller');
     
 });
 
