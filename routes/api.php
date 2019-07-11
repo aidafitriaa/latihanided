@@ -52,9 +52,8 @@ Route::get('contoh2', 'ContohController@index2');
 Route::group(
     ['middleware' => 'cors'],function (){
     // Isi Route Disini
-    Route::resource('siswi','SiswiController');
-    Route::resource('sekolah','SekolahController');
-    Route::resource('siswa','Siswa2Controller');
-    
+    Route::resource('kategori', 'KategoriController');
+    Route::resource('tag', 'TagsController');
+    Route::resource('artikel', 'ArtikelsController');
 });
 

@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Tag;
+use App\Kategori;
 use Session;
 
-class TagController extends Controller
+class CategoriController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class TagController extends Controller
      */
     public function index()
     {
-        $tag = Tag::orderBy('created_at','desc')->get();
-        return view('backend.tag.index', compact('tag'));
+        $kategori = Kategori::orderBy('created_at','desc')->get();
+        return view('backend.kategori.index', compact('kategori'));
     }
 
     /**
@@ -26,7 +26,7 @@ class TagController extends Controller
      */
     public function create()
     {
-        return view ('backend.tag.create');
+        return view ('backend.kategori.create');
     }
 
     /**
@@ -38,18 +38,18 @@ class TagController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama_tag' => 'required|unique:tags'
+            'nama_kategori' => 'required|unique:kategoris'
         ]);
-        $tag = new Tag();
-        $tag->nama_tag = $request->nama_tag;
-        $tag->slug = str_slug($request->nama_tag, '-');
-        $tag->save();
+        $kategori = new Kategori();
+        $kategori->nama_kategori = $request->nama_kategori;
+        $kategori->slug = str_slug($request->nama_kategori, '-');
+        $kategori->save();
         Session::flash("flash_notification",[
             "level" => "success",
             "message" => "Berhasil menyimpan<b>"
-                         . $tag->nama_tag."</b>"
+                         . $kategori->nama_kategori."</b>"
         ]);
-        return redirect()->route('tag.index');
+        return redirect()->route('kategori.index');
     }
 
     /**
@@ -71,8 +71,8 @@ class TagController extends Controller
      */
     public function edit($id)
     {
-        $tag = Tag::findOrfail($id);
-        return view('backend.tag.edit',compact('tag'));
+        $kategori = Kategori::findOrfail($id);
+        return view('backend.kategori.edit',compact('kategori'));
     }
 
     /**
@@ -85,18 +85,18 @@ class TagController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'nama_tag' => 'required'
+            'nama_kategori' => 'required'
         ]);
-        $tag = Tag::findOrfail($id);
-        $tag->nama_tag = $request->nama_tag;
-        $tag->slug = str_slug($request->nama_tag, '-');
-        $tag->save();
+        $kategori = Kategori::findOrfail($id);
+        $kategori->nama_kategori = $request->nama_kategori;
+        $kategori->slug = str_slug($request->nama_kategori, '-');
+        $kategori->save();
         Session::flash("flash_notification",[
             "level" => "success",
             "message" => "Berhasil mengedit<b>"
-                         . $tag->nama_tag."</b>"
+                         . $kategori->nama_kategori."</b>"
         ]);
-        return redirect()->route('tag.index');
+        return redirect()->route('kategori.index');
     }
 
     /**
@@ -107,13 +107,14 @@ class TagController extends Controller
      */
     public function destroy($id)
     {
-        $tag = Tag::findOrfail($id);
-        if(!Tag::destroy($id)) return redirect()->back();
+        $kategori = Kategori::findOrfail($id);
+        if(!Kategori::destroy($id)) return redirect()->back();
         Session::flash("flash_notification",[
             "level" => "Success",
             "message" => "Berhasil menghapus<b>"
-                         . $tag->nama_tag."</b>"
+                         . $kategori->nama_kategori."</b>"
         ]);
-        return redirect()->route('tag.index');
+        return redirect()->route('kategori.index');
+
     }
 }

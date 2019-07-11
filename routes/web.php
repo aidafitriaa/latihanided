@@ -53,6 +53,23 @@ Route::get('siswa', function () {
     return view('siswa');
 });
 
+
+Route::get('kategori', function () {
+    return view('kategori');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('kategori', function () {
+    return view('kategori');
+});
+
+Route::get('tag', function () {
+    return view('tag');
+});
+
+Route::get('artikel', function () {
+    return view('artikel');
+});
