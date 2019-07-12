@@ -20,7 +20,7 @@ class ArtikelController extends Controller
     public function index()
     {
         $artikel = Artikel::orderBy('created_at','desc')->get();
-        return view('backend.artikel.index', compact('artikel'));
+        return view('admin.artikel.index', compact('artikel'));
     }
 
     /**
@@ -33,7 +33,7 @@ class ArtikelController extends Controller
         $kategori = Kategori::all();
         $tag = Tag::all();
         // dd($tag);
-        return view('backend.artikel.create', compact('kategori','tag'));
+        return view('admin.artikel.create', compact('kategori','tag'));
     }
 
     /**
@@ -87,7 +87,7 @@ class ArtikelController extends Controller
     public function show($id)
     {
         $artikel = Artikel::findOrFail($id);
-        return view('backend.artikel.show', compact('artikel'));
+        return view('admin.artikel.show', compact('artikel'));
     }
 
     /**
@@ -102,7 +102,7 @@ class ArtikelController extends Controller
         $kategori = Kategori::all();
         $tag = Tag::all();
         $select = $artikel->tag->pluck('id')->toArray();
-        return view('backend.artikel.edit', compact('artikel','kategori','select','tag'));
+        return view('admin.artikel.edit', compact('artikel','kategori','select','tag'));
     }
 
     /**

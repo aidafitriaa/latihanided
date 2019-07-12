@@ -31,7 +31,7 @@ function() {
         return view('admin.index');
     });
     route::resource('artikel','ArtikelController');
-    route::resource('kategori','KategoriController');
+    route::resource('categori','CategoriController');
     route::resource('tag','TagController');
 }
 );

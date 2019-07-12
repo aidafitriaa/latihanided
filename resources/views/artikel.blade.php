@@ -28,7 +28,7 @@
             </select>
             <select class="form-control" name="id_kategori" id="" required>
             </select>
-            <textarea class="form-control" name="konten" id="kontennya" required></textarea>
+            <textarea class="form-control ckeditor" name="konten" id="kontennya" required></textarea>
             <button type="submit" class="btn btn-outline-info tombol-simpan">
                     Simpan Data
                 </button>
