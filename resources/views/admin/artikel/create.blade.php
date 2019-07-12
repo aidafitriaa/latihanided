@@ -35,21 +35,24 @@
                                         </span>
                                         @enderror
                                     </div>
+
                                     <div class="form-group">
-                                        <label for="">Foto</label>
-                                        <input class="form-control 
-                                        @error('foto') is-invalid @enderror" type="file" 
-                                        name="foto" id="" required>
-                                        @error('foto')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{$message}}</strong>
-                                        </span>
-                                        @enderror
-                                    </div>
+                                            <label for="">Foto</label>
+                                            <input class="form-control 
+                                            @error('foto') is-invalid @enderror" type="text" 
+                                            name="foto" id="" required>
+                                            @error('foto')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$message}}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
+
                                     <div class="form-group">
                                         <label for="">Tag</label>
-                                        <select class="form-control 
-                                        @error('tag') is-invalid @enderror" name="tag[]" id="s2_demo3" multiple="multiple" required>
+                                        <select class="form-control select22
+                                        @error('tag') is-invalid @enderror" 
+                                        name="tag[]" id="s2_demo3" multiple="multiple" required>
                                         @foreach ($tag as $data)
                                             <option value="{{$data->id}}">
                                                 {{ $data->nama_tag }}
@@ -62,10 +65,12 @@
                                         </span>
                                         @enderror
                                     </div>
+
                                     <div class="form-group">
                                         <label for="">Kategori</label>
                                         <select class="form-control
-                                        @error('kategori') is-invalid @enderror" name="id_kategori" id="" required>
+                                        @error('kategori') is-invalid @enderror" 
+                                        name="id_kategori" id="" required>
                                         @foreach ($kategori as $data)
                                             <option value="{{$data->id}}">
                                                 {{ $data->nama_kategori }}
@@ -79,6 +84,7 @@
                                         </span>
                                         @enderror
                                     </div>
+
                                     <div class="form-group">
                                             <label for="">Konten</label>
                                             <textarea class="form-control ckeditor 
@@ -91,11 +97,11 @@
                                             </span>
                                             @enderror
                                         </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-outline-info btn-rounded btn-block">
-                                            Simpan Data
-                                        </button>
-                                    </div>
+                                        <div class="form-group">
+                                                <button type="submit" class="btn btn-outline-info">
+                                                    Simpan Data
+                                                </button>
+                                            </div>
                                 </form>
                             </div>
                         </div>

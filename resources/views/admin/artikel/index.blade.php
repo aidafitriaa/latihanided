@@ -70,3 +70,9 @@
     </div>
 </section>
 @endsection
+<th style="text-align: center;">Aksi</th>
+<script>
+    $(document).ready(function() {
+        $('#select22').select2();
+    });
+</script>

@@ -10,7 +10,14 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('assets/select2/select2-4.0.7/dist/js/select2.min.js') }}"></script>
+
+    <script>
+        $(document).ready(function) {
+            $('.select22').select2();
+        });
+    </script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -18,6 +25,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="{{ asset('assets/select2/select2-4.0.7/dist/css/select2.min.css') }}"></script>
 </head>
 <body>
     <div id="app">

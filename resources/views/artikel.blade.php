@@ -23,15 +23,20 @@
     <div class="container">
             <label>Judul</label>
             <input class="form-control" type="text" name="judul" id=""required>
+            <label>Foto</label>
             <input class="form-control" type="file" name="foto" id="" required>
+            <label>Tag</label>
             <select class="form-control" name="isi_tag[]" id="s2_demo3" multiple="multiple" required>
             </select>
+            <label>Kategori</label>
             <select class="form-control" name="id_kategori" id="" required>
             </select>
+            <label>Konten</label>
             <textarea class="form-control ckeditor" name="konten" id="kontennya" required></textarea>
-            <button type="submit" class="btn btn-outline-info tombol-simpan">
-                    Simpan Data
+            <button type="submit" class="btn btn-outline-info">
+                     Simpan Data
                 </button>
+
     </div>
     
   </form>
