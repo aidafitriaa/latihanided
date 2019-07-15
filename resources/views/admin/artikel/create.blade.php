@@ -39,7 +39,7 @@
                                     <div class="form-group">
                                             <label for="">Foto</label>
                                             <input class="form-control 
-                                            @error('foto') is-invalid @enderror" type="text" 
+                                            @error('foto') is-invalid @enderror" type="file" 
                                             name="foto" id="" required>
                                             @error('foto')
                                             <span class="invalid-feedback" role="alert">
